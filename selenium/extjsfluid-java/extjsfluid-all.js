@@ -56,8 +56,8 @@ function loadScript(url, callback){
 / DESCRIPTION: 
 /	Checks if element is visible
 / 
-/ COMPATABILITY:
-/ 	Chrome, Firefox, IE (8, 9, 10)
+/ SUPPORTED BROWSERS:
+/ 	Chrome, Firefox, IE8, IE9, IE10
 **/	
 var isVisible = function(obj){
     if (obj == document) return true;
@@ -103,8 +103,8 @@ var isVisible = function(obj){
 /	textContent or innerText because those two methods are vastly
 /	different, and even innerText works differently across browsers.
 / 
-/ COMPATABILITY:
-/ 	Chrome, Firefox, IE (8, 9, 10)
+/ SUPPORTED BROWSERS:
+/ 	Chrome, Firefox, IE8, IE9, IE10)
 **/
 getPlainText = function(node){
 	// used for testing:
@@ -236,8 +236,8 @@ getPlainText = function(node){
 /	HTMLEvents - load|unload|abort|error|select|change|submit|reset|focus|blur|resize|scroll
 /	MouseEvents - click|dblclick|mousedown|mouseup|mouseover|mousemove|mouseout
 /
-/ COMPATABILITY:
-/ 	Chrome, Firefox, IE (8, 9, 10)
+/ SUPPORTED BROWSERS:
+/ 	Chrome, Firefox, IE8, IE9, IE10
 **/	
 var simulate = function(element, eventName){
 
@@ -329,8 +329,8 @@ var defaultOptions = {
 / DESCRIPTION:	
 /	Checks if element contains a class
 / 
-/ COMPATABILITY:
-/ 	Chrome, Firefox, IE (8, 9, 10)
+/ SUPPORTED BROWSERS:
+/ 	Chrome, Firefox, IE8, IE9, IE10
 **/
 if (!Element.prototype.hasClass){
 	Element.prototype.hasClass = function (classname) {
@@ -354,7 +354,7 @@ if (!Element.prototype.hasClass){
 /	indexOf compares searchElement to elements of the Array using strict equality 
 /	(the same method used by the ===, or triple-equals, operator).
 / 
-/ COMPATABILITY:
+/ SUPPORTED BROWSERS:
 / 	Check https://developer.mozilla.org
 **/
 if (!Array.prototype.indexOf){
@@ -403,7 +403,7 @@ if (!Array.prototype.indexOf){
 /	with an assigned value. It is not invoked for indexes which have been deleted 
 /	or which have been initialized to undefined.
 / 
-/ COMPATABILITY:
+/ SUPPORTED BROWSERS:
 / 	Check https://developer.mozilla.org
 **/
 if (!Array.prototype.forEach) {
@@ -427,7 +427,7 @@ if (!Array.prototype.forEach) {
 / DESCRIPTION:	
 /	Returns a set of elements which have all the given class names 
 / 
-/ COMPATABILITY:
+/ SUPPORTED BROWSERS:
 / 	IE8 
 **/
 if(!document.getElementsByClassName) {
@@ -446,8 +446,8 @@ if(!document.getElementsByClassName) {
 / DESCRIPTION:	
 /	Javascript inheritance
 / 
-/ COMPATABILITY:
-/ 	TBU
+/ SUPPORTED BROWSERS:
+/ 	Chrome, Firefox, IE8, IE9, IE10
 **/
 Function.prototype.inheritsFrom = function( parentClassOrObject){ 
 	if ( parentClassOrObject.constructor == Function ) 
@@ -474,7 +474,7 @@ Function.prototype.inheritsFrom = function( parentClassOrObject){
 / DESCRIPTION:	
 /	Override window open function to handle file download.
 / 
-/ COMPATABILITY:
+/ SUPPORTED BROWSERS:
 / 	Chrome, Firefox, IE8, IE9, IE10
 **/
 
@@ -496,7 +496,7 @@ window.open = function(open){
 / DESCRIPTION:	
 /	Javascript wrapper classes for ExtJs components
 / 
-/ COMPATABILITY:
+/ SUPPORTED BROWSERS:
 / 	Chrome, Firefox, IE8, IE9, IE10
 **/
 
